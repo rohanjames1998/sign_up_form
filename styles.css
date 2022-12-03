@@ -3,3 +3,12 @@
   margin: 0;
   padding: 0;
 }
+
+cont {
+  display:flex;
+}
+
+.bg-img {
+  height: 100vh;
+  width: 900px;
+}
