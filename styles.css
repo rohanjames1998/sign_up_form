@@ -1,16 +1,56 @@
 * {
   box-sizing: border-box;
+  text-decoration: none;
   margin: 0;
   padding: 0;
 }
 
 html {
   font-size: 42px;
+  font-family: 'Noto Sans', sans-serif;
 }
 
-.cont {
+button, input, label {
+  font-family: inherit;
+  appearance: none;
+}
+
+legend {
+  font-weight:600;
+  font-size: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+label {
+  font-size: 0.5rem;
+  letter-spacing: 1.5px;
+  margin-top: 10px;
+}
+
+fieldset {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-around;
+  margin-left:1rem;
+  border: none;
+  height: 6rem;
+}
+
+input {
+  /* border: none; */
+  width: 8rem;
+  height: 1rem;
+}
+
+.input-cont {
   display:flex;
-  flex: auto;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+.body-cont {
+  display:flex;
 }
 
 .bg-img {
@@ -19,9 +59,18 @@ html {
   display: block;
 }
 
-
-
-.form-cont {
-  display: flex;
-  flex-direction: column;
+.info-txt{
+  margin: 5rem 0 1rem 1rem;
+  font-weight: 600;
 }
+
+.motivational-txt {
+  font-weight: 600;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+}
+
+
+
+
+
