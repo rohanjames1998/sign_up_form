@@ -16,25 +16,17 @@ button, input, label {
 }
 
 legend {
-  font-weight:600;
+  font-weight: bold;
   font-size: 1rem;
   margin-bottom: 0.75rem;
 }
 
 label {
   font-size: 0.5rem;
-  letter-spacing: 1.5px;
-  margin-top: 10px;
+  letter-spacing: 3px;
+  font-weight: 600;
 }
 
-fieldset {
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: space-around;
-  margin-left:1rem;
-  border: none;
-  height: 6rem;
-}
 
 input {
   /* border: none; */
@@ -42,34 +34,53 @@ input {
   height: 1rem;
 }
 
-.input-cont {
-  display:flex;
-  flex-direction: column;
+.fieldset {
+  display: flex;
+  flex-flow: row wrap;
   justify-content: space-between;
+  margin-left:1rem;
+  border: none;
+  height: 10rem;
+  margin-bottom: 3rem;
 }
 
+.fieldset > div {
+  display:flex;
+  flex-direction: column;
+  margin-right: 4rem;
+}
 
 .body-cont {
   display:flex;
 }
 
 .bg-img {
-  height: 100vh;
+  height: 100%;
   width: 20rem;
   display: block;
 }
 
 .info-txt{
   margin: 5rem 0 1rem 1rem;
-  font-weight: 600;
+  font-weight: bold;
 }
 
 .motivational-txt {
-  font-weight: 600;
+  font-weight: bold;
   margin-left: 1rem;
-  margin-bottom: 1rem;
+  margin-bottom: 3rem;
 }
 
+ .first-name-cont {
+}
+
+/* .pwd2-cont {
+  order: 1;
+}
+
+.pno-cont {
+  order: 2;
+} */
 
 
 
