@@ -34,6 +34,12 @@ input {
   height: 1rem;
 }
 
+.content-cont {
+  -webkit-box-shadow: 0px 1px 5px 1px rgba(183,180,184,1);
+  -moz-box-shadow: 0px 1px 5px 1px rgba(183,180,184,1);
+  box-shadow: 0px 1px 5px 1px rgba(183,180,184,1);
+}
+
 .fieldset {
   display: flex;
   flex-flow: row wrap;
@@ -41,7 +47,7 @@ input {
   margin-left:1rem;
   border: none;
   height: 10rem;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 
 .fieldset > div {
@@ -54,21 +60,28 @@ input {
   display:flex;
 }
 
-.bg-img {
+/* .bg-img {
   height: 100%;
   width: 20rem;
-  display: block;
+} */
+
+.logo-section {
+  height: 100%;
+  width: 20rem;
+  background-image: url('img/background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .info-txt{
-  margin: 5rem 0 1rem 1rem;
+  margin: 3rem 0 1rem 1rem;
   font-weight: bold;
 }
 
 .motivational-txt {
   font-weight: bold;
   margin-left: 1rem;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 
  .first-name-cont {
