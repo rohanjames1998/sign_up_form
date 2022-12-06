@@ -8,40 +8,81 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Varela&family=Vazirmatn&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,600;0,700;1,500&family=Varela&family=Vazirmatn&display=swap"
       rel="stylesheet"
     />
     <title>Sign-Up</title>
   </head>
   <body>
-    <div class="cont">
-      <div class="bg-cont">
-        <img class="bg-img" src="img/background.jpg" alt="bg-img" />
-      </div>
-      <div class="form-cont">
+    <div class="body-cont">
+      <section class="logo-section">
+        <div class="bg-cont">
+          <img class="bg-img" src="img/background.jpg" alt="bg-img" />
+        </div>
+        <div class="logo-cont">
+          <img class="logo" src="img/logo.png" alt="logo" />
+        </div>
+      </section>
+      <section class="form-section">
         <p class="info-txt">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus porro
           blanditiis sapiente voluptatem, iusto vitae cum labore, tempore eaque
           enim rem, alias corrupti vel recusandae!
         </p>
-        <form action="#" method="post">
-          <fieldset>
-            <legend>Sign Up Now!</legend>
-            <label for="first_name"> FIRST NAME</label>
-            <input type="text" name="first_name" id="first_name" />
-            <label for="last_name">LAST NAME</label>
-            <input type="text" name="last_name" id="last_name" />
-            <label for="email">EMAIL</label>
-            <input type="email" name="email" id="email" />
-            <label for="pnumber">PHONE NUMBER</label>
-            <input type="tel" name="pnumber" id="pnumber" />
-            <label for="pword">PASSWORD</label>
-            <input type="password" name="pword" id="pword" />
-            <label for="confirmpword">CONFIRM PASSWORD</label>
-            <input type="password" name="confirmpword" id="confirmpword" />
-          </fieldset>
-        </form>
-      </div>
+        <p class="motivational-txt">Lorem <em>ipsum</em> dolor sit amet.</p>
+        <div class="content-cont">
+          <form action="#" method="post">
+            <fieldset class="fieldset">
+              <legend>Sign Up Now!</legend>
+              <div class="first-name-cont">
+                <label for="first_name"> FIRST NAME</label>
+                <input
+                  type="text"
+                  name="first_name"
+                  id="first_name"
+                  required="true"
+                />
+              </div>
+              <div class="last-name-cont">
+                <label for="last_name">LAST NAME</label>
+                <input
+                  type="text"
+                  name="last_name"
+                  id="last_name"
+                  required="true"
+                />
+              </div>
+              <div class="email-cont">
+                <label for="email">EMAIL</label>
+                <input type="email" name="email" id="email" required="true" />
+              </div>
+              <div class="pno-cont">
+                <label for="pno">PHONE NUMBER</label>
+                <input type="tel" name="pno" id="pno" required="true" />
+              </div>
+              <div class="pwd-cont">
+                <label for="pword">PASSWORD</label>
+                <input
+                  type="password"
+                  name="pword"
+                  id="pword"
+                  required="true"
+                />
+              </div>
+              <div class="pwd2-cont">
+                <label for="confirmpword">CONFIRM PASSWORD</label>
+                <input
+                  type="password"
+                  name="confirmpword"
+                  id="confirmpword"
+                  required="true"
+                />
+              </div>
+            </fieldset>
+            <button type="submit">Create Account</button>
+          </form>
+        </div>
+      </section>
     </div>
   </body>
 </html>
