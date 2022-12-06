@@ -82,7 +82,7 @@ input {
 }
 
 .info-txt{
-  margin: 2.5rem 0 1rem 1rem;
+  margin: 1rem 0 1rem 1rem;
   font-weight: bold;
   font-size: inherit;
 }
@@ -91,7 +91,7 @@ input {
   font-weight: bold;
   font-size: inherit;
   margin-left: 1rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 .logo-cont{
@@ -109,6 +109,32 @@ input {
   font-family: 'Varela', 'Noto sans', sans-serif;
   font-size: 3rem;
   margin-left: 1rem;
+}
+
+.submit-btn {
+  font-family: inherit;
+  font-size: 0.75rem;
+  font-weight: 500;
+  padding: 0.25rem 1rem;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #ad9788;
+}
+
+.button-cont {
+  display: flex;
+  gap: 0.5rem;
+  font-size: 0.625rem;
+  align-items: center;
+  justify-content: space-between;
+  height: 3rem;
+}
+
+.account-txt {
+  margin-bottom: 1rem;
+  margin-right: 1rem;
 }
 
  .first-name-cont {
