@@ -27,6 +27,7 @@ label {
 
 .body-cont {
   display: flex;
+  height: 100vh;
 }
 /*------------Right side-----------*/
 
@@ -183,7 +184,7 @@ input:invalid {
   flex-direction: column;
   flex: 1 4rem;
   justify-content: space-between;
-  height: 100vh;
+  height: 100%;
   background-image: url("img/background.jpg");
   background-size: cover;
   background-repeat: no-repeat;
