@@ -126,34 +126,6 @@ input:invalid {
 .highlight-txt {
   color: #886957;
 }
-/* --------------Left Side------------ */
-
-/* Logo styles */
-.logo-section {
-  flex: 1 4rem;
-  height: 100vh;
-  background-image: url("img/background.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.logo-cont {
-  display: flex;
-  align-items: center;
-  background-color: #e9e6e388;
-  margin-top: 6rem;
-}
-.logo {
-  height: 5rem;
-  margin-left: 1rem;
-}
-
-.logo-txt {
-  font-family: "Varela", "Noto sans", sans-serif;
-  font-size: 3rem;
-  margin-left: 1rem;
-  letter-spacing: 0.3rem;
-}
 
 /* Button styles */
 
@@ -202,3 +174,48 @@ input:invalid {
 .login:active {
   color: #4a7177;
 }
+
+/* --------------Left Side------------ */
+
+/* Logo styles */
+.logo-section {
+  display: flex;
+  flex-direction: column;
+  flex: 1 4rem;
+  justify-content: space-between;
+  height: 100vh;
+  background-image: url("img/background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.logo-cont {
+  display: flex;
+  align-items: center;
+  background-color: #e9e6e388;
+  margin-top: 6rem;
+}
+.logo {
+  height: 5rem;
+  margin-left: 1rem;
+}
+
+.logo-txt {
+  font-family: "Varela", "Noto sans", sans-serif;
+  font-size: 3rem;
+  margin-left: 1rem;
+  letter-spacing: 0.3rem;
+}
+
+.img-credit {
+  color:#fff ;
+  font-size: 0.5rem;
+  align-self: center;
+}
+
+.img-credit > a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+
