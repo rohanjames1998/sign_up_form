@@ -16,30 +16,9 @@ button, input, label {
   appearance: none;
 }
 
-legend {
-  font-family: 'Varela', 'Noto sans', sans-serif;
-  position: absolute;
-  top: 0;
-  font-weight: bold;
-  font-size: 0.9rem;
-  margin-top: 0.3rem;
-}
-
-label {
-  font-size: 0.4rem;
-  letter-spacing: 3px;
-  font-weight: 700;
-}
 
 
-input {
-  border: 1px solid #b7c3c3;
-  border-radius: 5px;
-  width: 7.5rem;
-  height: 1rem;
-}
-
-.content-cont {
+.content-cont { /* Shadow around sign up box */
   -webkit-box-shadow: 0px 1px 5px 1px rgba(183,180,184,1);
   -moz-box-shadow: 0px 1px 5px 1px rgba(183,180,184,1);
   box-shadow: 0px 1px 5px 1px rgba(183,180,184,1);
@@ -76,6 +55,32 @@ input {
   margin-right: 4rem;
 }
 
+
+legend {
+  font-family: 'Varela', 'Noto sans', sans-serif;
+  position: absolute;
+  top: 0;
+  font-weight: bold;
+  font-size: 0.9rem;
+  margin-top: 0.3rem;
+}
+
+
+label {
+  font-size: 0.4rem;
+  letter-spacing: 3px;
+  font-weight: 700;
+}
+
+
+input {
+  border: 1px solid #b7c3c3;
+  border-radius: 5px;
+  width: 7.5rem;
+  height: 1rem;
+  background-color: #ad97880b;
+}
+
 /* Right side text */
 
 .info-txt{
@@ -99,6 +104,7 @@ input {
 /* Logo styles */
 .logo-section {
   flex: 1 4rem;
+  height: 100vh;
   background-image: url('img/background.jpg');
   background-size: cover;
   background-repeat: no-repeat;
@@ -140,6 +146,7 @@ input {
   display: flex;
   gap: 0.5rem;
   font-size: 0.5rem;
+  margin-top: 2rem;
   align-items: center;
   justify-content: space-between;
   height: 3rem;
