@@ -27,7 +27,7 @@
           blanditiis sapiente voluptatem, iusto vitae cum labore, tempore eaque
           enim rem, alias corrupti vel recusandae!
         </p>
-        <p class="motivational-txt">Lorem <em>ipsum</em> dolor sit amet.</p>
+        <p class="motivational-txt">Lorem <span class="highlight-txt"><em>ipsum</em></span> dolor sit amet.</p>
         <form action="#" method="post">
           <fieldset class="fieldset">
             <legend>Sign Up</legend>
@@ -37,8 +37,11 @@
                 type="text"
                 name="first_name"
                 id="first_name"
-                required="true"
+                minlength="3"
+                maxlength="12"
+                required
               />
+              <span aria-label="required">*</span>
             </div>
             <div class="last-name-cont">
               <label for="last_name">LAST NAME</label>
@@ -46,20 +49,25 @@
                 type="text"
                 name="last_name"
                 id="last_name"
-                required="true"
+                minlength="3"
+                maxlength="12"
+                required
               />
+              <span aria-label="required">*</span>
             </div>
             <div class="email-cont">
               <label for="email">EMAIL</label>
-              <input type="email" name="email" id="email" required="true" />
+              <input type="email" name="email" id="email" maxlength="50" required />
+              <span aria-label="required">*</span>
             </div>
             <div class="pno-cont">
               <label for="pno">PHONE NUMBER</label>
-              <input type="tel" name="pno" id="pno" required="true" />
+              <input type="tel" name="pno" id="pno" minlength="10" maxlength="10" />
             </div>
             <div class="pwd-cont">
               <label for="pword">PASSWORD</label>
-              <input type="password" name="pword" id="pword" required="true" />
+              <input type="password" name="pword" id="pword" pattern="^(?=.*?[A-Z])(?=(.*[a-z]){1,})(?=(.*[\d]){1,})(?=(.*[\W]){1,})(?!.*\s).{8,}$" required />
+              <span aria-label="required">*</span>
             </div>
             <div class="pwd2-cont">
               <label for="confirmpword">CONFIRM PASSWORD</label>
@@ -67,14 +75,16 @@
                 type="password"
                 name="confirmpword"
                 id="confirmpword"
-                required="true"
+                pattern="^(?=.*?[A-Z])(?=(.*[a-z]){1,})(?=(.*[\d]){1,})(?=(.*[\W]){1,})(?!.*\s).{8,}$"
+                required
               />
+              <span aria-label="required">*</span>
             </div>
           </fieldset>
           <div class="button-cont">
             <button type="submit" class="submit-btn">Create Account</button>
             <p class="account-txt">
-              Already have an account?<a href="#" class="login">Log in</a>
+              Already have an account?<a href="#" class="login"> Log in</a>
             </p>
           </div>
         </form>
