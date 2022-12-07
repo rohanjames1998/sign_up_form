@@ -7,25 +7,26 @@
 
 html {
   font-size: 42px;
-  font-family: 'Noto Sans', sans-serif;
+  font-family: "Noto Sans", sans-serif;
   color: #212b31;
 }
 
-button, input, label {
+button,
+input,
+label {
   font-family: inherit;
   appearance: none;
 }
 
-
-
-.content-cont { /* Shadow around sign up box */
-  -webkit-box-shadow: 0px 1px 5px 1px rgba(183,180,184,1);
-  -moz-box-shadow: 0px 1px 5px 1px rgba(183,180,184,1);
-  box-shadow: 0px 1px 5px 1px rgba(183,180,184,1);
+.content-cont {
+  /* Shadow around sign up box */
+  -webkit-box-shadow: 0px 1px 5px 1px rgba(183, 180, 184, 1);
+  -moz-box-shadow: 0px 1px 5px 1px rgba(183, 180, 184, 1);
+  box-shadow: 0px 1px 5px 1px rgba(183, 180, 184, 1);
 }
 
 .body-cont {
-  display:flex;
+  display: flex;
 }
 /*------------Right side-----------*/
 
@@ -39,32 +40,40 @@ button, input, label {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
-  padding-left:1rem;
+  padding-left: 1rem;
   padding-top: 2rem;
   border: none;
   height: 10rem;
   margin-bottom: 1rem;
-  -webkit-box-shadow: 0px 1px 5px 1px #95847aa9;;
+  -webkit-box-shadow: 0px 1px 5px 1px #95847aa9;
   -moz-box-shadow: 0px 1px 5px 1px #95847aa9;
   box-shadow: 0px 1px 5px 1px #95847aa9;
 }
 
-.fieldset > div { /* For all the containers of inputs and labels */
-  display:flex;
+.fieldset > div {
+  /* For all the containers of inputs and labels */
+  display: flex;
   flex-direction: column;
   margin-right: 4rem;
+  position: relative;
 }
 
+.fieldset > div > span { /*Selecting all the required labels (i.e., *) */
+position: absolute;
+right: 0;
+top: 0;
+font-size: 0.3rem;
+}
 
 legend {
-  font-family: 'Varela', 'Noto sans', sans-serif;
+  font-family: "Varela", "Noto sans", sans-serif;
   position: absolute;
   top: 0;
   font-weight: bold;
   font-size: 0.9rem;
   margin-top: 0.3rem;
+  letter-spacing: 0.05rem;
 }
-
 
 label {
   font-size: 0.4rem;
@@ -72,21 +81,37 @@ label {
   font-weight: 700;
 }
 
-
 input {
   border: 1px solid #b7c3c3;
   border-radius: 5px;
   width: 7.5rem;
   height: 1rem;
+  font-size: 0.5rem;
   background-color: #ad97880b;
+}
+
+input:focus{
+  outline: none;
+  border: 3px solid #7a97e7;
+}
+
+input:valid{
+  outline: none;
+  border: 3px solid rgb(10, 181, 10);
+}
+
+input:invalid {
+  outline: none;
+  border: 3px solid rgb(223, 133, 133);
 }
 
 /* Right side text */
 
-.info-txt{
+.info-txt {
   margin: 2.73rem 0 1rem 1rem;
   font-weight: bold;
   font-size: 0.75rem;
+  letter-spacing: 0.05rem;
 }
 
 .motivational-txt {
@@ -94,6 +119,8 @@ input {
   font-size: 0.75rem;
   margin-left: 1rem;
   margin-bottom: 1.5rem;
+  letter-spacing: 0.05rem;
+
 }
 
 .highlight-txt {
@@ -105,26 +132,27 @@ input {
 .logo-section {
   flex: 1 4rem;
   height: 100vh;
-  background-image: url('img/background.jpg');
+  background-image: url("img/background.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-.logo-cont{
-  display:flex;
-  align-items:center;
+.logo-cont {
+  display: flex;
+  align-items: center;
   background-color: #e9e6e388;
   margin-top: 6rem;
 }
-.logo{
+.logo {
   height: 5rem;
   margin-left: 1rem;
 }
 
 .logo-txt {
-  font-family: 'Varela', 'Noto sans', sans-serif;
+  font-family: "Varela", "Noto sans", sans-serif;
   font-size: 3rem;
   margin-left: 1rem;
+  letter-spacing: 0.3rem;
 }
 
 /* Button styles */
@@ -158,18 +186,14 @@ input {
 }
 
 .login:link {
-  color:#6f949a;
+  color: #6f949a;
 }
 
 .login:visited {
-  color:#6f949a;
-  cursor:pointer;
+  color: #6f949a;
+  cursor: pointer;
 }
 
 .login:active {
-  color:#61524d;
+  color: #61524d;
 }
-
-
-
-
