@@ -27,6 +27,7 @@ label {
 
 .body-cont {
   display: flex;
+  height: 100vh;
 }
 /*------------Right side-----------*/
 
@@ -70,7 +71,7 @@ legend {
   position: absolute;
   top: 0;
   font-weight: bold;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   margin-top: 0.3rem;
   letter-spacing: 0.05rem;
 }
@@ -108,7 +109,7 @@ input:invalid {
 /* Right side text */
 
 .info-txt {
-  margin: 2.73rem 0 1rem 1rem;
+  margin: 2.3rem 0 1rem 1rem;
   font-weight: bold;
   font-size: 0.75rem;
   letter-spacing: 0.05rem;
@@ -151,7 +152,7 @@ input:invalid {
   display: flex;
   gap: 0.5rem;
   font-size: 0.5rem;
-  margin-top: 2rem;
+  margin-top: 1rem;
   align-items: center;
   justify-content: space-between;
   height: 3rem;
@@ -183,7 +184,7 @@ input:invalid {
   flex-direction: column;
   flex: 1 4rem;
   justify-content: space-between;
-  height: 100vh;
+  height: 100%;
   background-image: url("img/background.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -202,7 +203,7 @@ input:invalid {
 
 .logo-txt {
   font-family: "Varela", "Noto sans", sans-serif;
-  font-size: 3rem;
+  font-size: 2.7rem;
   margin-left: 1rem;
   letter-spacing: 0.3rem;
 }
